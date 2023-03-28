@@ -7,9 +7,10 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div>
-      <Home />
+      <Register />
     </div>
   );
 }
 
+// https://www.youtube.com/watch?v=k4mjF4sPITE&t=440s  51:10m
 export default App;
