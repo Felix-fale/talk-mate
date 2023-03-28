@@ -41,5 +41,5 @@ function App() {
   );
 }
 
-// https://www.youtube.com/watch?v=k4mjF4sPITE&t=440s  51:10m
+// https://www.youtube.com/watch?v=k4mjF4sPITE&t=440s  1:34m
 export default App;
