@@ -52,6 +52,8 @@ function Register(props) {
             photoURL: downloadURL,
             uid: user.uid,
           });
+
+          await setDoc(doc(db, "userChats", user.uid), {});
         }
       );
     } catch (err) {
