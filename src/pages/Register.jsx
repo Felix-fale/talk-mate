@@ -4,9 +4,11 @@ import { auth, db, storage } from "../firebase/firebase";
 import { useState } from "react";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 function Register(props) {
   const [err, setErr] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,8 +56,10 @@ function Register(props) {
           });
 
           await setDoc(doc(db, "userChats", user.uid), {});
+          navigate("/");
         }
       );
+      console.log("bien");
     } catch (err) {
       setErr(true);
       console.log(err);
