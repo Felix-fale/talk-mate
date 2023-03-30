@@ -85,7 +85,7 @@ function Search(props) {
       <div className="searchForm">
         <input
           type="text"
-          placeholder="Find a user"
+          placeholder="Chercher un utilisateur"
           onKeyDown={handleKey}
           onChange={(e) => setUserName(e.target.value)}
           value={userName}

@@ -313,10 +313,10 @@
           border-radius: 5px;
           color: #fff;
           background-color: #444654;
-          padding: 5px 10px;
-          font-size: 18px;
+          padding: 10px;
 
           &::placeholder {
+            font-size: 13px;
             color: #fff;
           }
         }
