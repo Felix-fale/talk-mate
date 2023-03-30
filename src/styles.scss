@@ -102,9 +102,9 @@
     height: 99.5%;
     display: flex;
     overflow: hidden;
-    @include tablet {
-      width: 90%;
-    }
+    // @include tablet {
+    //   width: 90%;
+    // }
 
     .sidebar {
       flex: 1;
@@ -153,6 +153,7 @@
             @include tablet {
               position: absolute;
               bottom: 10px;
+              padding: 5px 10px;
             }
           }
         }
