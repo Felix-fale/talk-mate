@@ -91,15 +91,15 @@
 .home {
   background-color: #a7bcff;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   .container {
     border: 1px solid white;
     border-radius: 10px;
-    width: 65%;
-    height: 80%;
+    // width: 65%;
+    height: 99.5%;
     display: flex;
     overflow: hidden;
     @include tablet {
@@ -108,13 +108,13 @@
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      background-color: #202123;
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #202123;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
@@ -130,22 +130,24 @@
         .user {
           display: flex;
           gap: 10px;
+          align-items: center;
 
           img {
             background-color: #ddddf7;
-            height: 24px;
-            width: 24px;
+            height: 35px;
+            width: 35px;
             border-radius: 50%;
             object-fit: cover;
           }
 
           button {
             background-color: #5d5b8d;
-            color: #ddddf7;
-            font-size: 10px;
+            color: #fff;
+            font-size: 13px;
             border: none;
             cursor: pointer;
             border-radius: 10px;
+            padding: 10px 15px;
 
             @include tablet {
               position: absolute;
@@ -162,7 +164,10 @@
 
           input {
             background-color: transparent;
-            border: none;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 10px;
+            width: 95%;
             color: white;
             outline: none;
             &::placeholder {
@@ -173,11 +178,13 @@
       }
 
       .chats {
-        height: calc(100% - 112px);
-        overflow-y: scroll;
+        height: calc(100% - 127px);
+        overflow-y: auto;
+        padding: 0 10px;
       }
       .userChat {
-        padding: 10px;
+        margin: 10px 0;
+        padding: 5px 10px;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -185,7 +192,8 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #2f2d52;
+          border-radius: 5px;
+          background-color: #343541;
         }
 
         img {
@@ -202,7 +210,8 @@
           }
           p {
             font-size: 14px;
-            color: lightgray;
+            color: #fff;
+            margin: 5px 0;
           }
         }
       }
@@ -212,12 +221,12 @@
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #343541;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
-        color: lightgray;
+        color: #fff;
       }
 
       .chatIcons {
@@ -231,10 +240,10 @@
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-color: #444654;
         padding: 10px;
         height: calc(100% - 160px);
-        overflow-y: scroll;
+        overflow-y: auto;
 
         .message {
           display: flex;
@@ -244,7 +253,7 @@
           .messageInfo {
             display: flex;
             flex-direction: column;
-            color: gray;
+            color: #fff;
             font-weight: 300;
 
             img {
@@ -261,10 +270,11 @@
             gap: 10px;
 
             p {
-              background-color: white;
+              background-color: #5d5b8d;
               padding: 10px 20px;
               border-radius: 0px 10px 10px 10px;
               max-width: max-content;
+              color: #fff;
             }
 
             img {
@@ -278,7 +288,7 @@
             .messageContent {
               align-items: flex-end;
               p {
-                background-color: #8da4f1;
+                background-color: #343541;
                 color: white;
                 border-radius: 10px 0px 10px 10px;
               }
@@ -289,7 +299,7 @@
 
       .input {
         height: 50px;
-        background-color: white;
+        background-color: #353740;
         padding: 10px;
         display: flex;
         align-items: center;
@@ -299,11 +309,14 @@
           width: 100%;
           border: none;
           outline: none;
-          color: #2f2d52;
+          border-radius: 5px;
+          color: #fff;
+          background-color: #444654;
+          padding: 5px 10px;
           font-size: 18px;
 
           &::placeholder {
-            color: lightgray;
+            color: #fff;
           }
         }
 
@@ -321,7 +334,7 @@
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: #8da4f1;
+            background-color: #444654;
             cursor: pointer;
             border-radius: 10px;
           }
